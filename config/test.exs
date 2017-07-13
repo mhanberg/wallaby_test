@@ -4,7 +4,9 @@ use Mix.Config
 # you can enable the server option below.
 config :wallaby_test, WallabyTest.Endpoint,
   http: [port: 4001],
-  server: false
+  server: true
+
+config :wallaby_test, :sql_sandbox, true
 
 # Print only warnings and errors during test
 config :logger, level: :warn
@@ -12,8 +14,6 @@ config :logger, level: :warn
 # Configure your database
 config :wallaby_test, WallabyTest.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
   database: "wallaby_test_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

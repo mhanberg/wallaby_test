@@ -16,7 +16,7 @@ defmodule WallabyTest.Router do
   scope "/", WallabyTest do
     pipe_through :browser # Use the default browser stack
 
-    get "/*path", PageController, :index
+    get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.

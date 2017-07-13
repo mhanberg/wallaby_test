@@ -36,7 +36,8 @@
 </div>
 
 <script>
-  const elem = document.querySelector('#localstorage');
-  elem.innerText = localStorage.getItem('foo');
+  const container = document.querySelector('#localstorage');
+  const localstorageContents = "foo = " + localStorage.getItem('foo');
+  container.innerText = localstorageContents;
   localStorage.setItem('foo', 'bar');
 </script>
