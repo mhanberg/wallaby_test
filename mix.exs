@@ -38,7 +38,7 @@ defmodule WallabyTest.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:wallaby, "~> 0.17", only: :test}]
+     {:wallaby, "~> 0.18", only: :test}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.

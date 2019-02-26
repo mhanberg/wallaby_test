@@ -11,6 +11,8 @@ config :wallaby_test, :sql_sandbox, true
 # Print only warnings and errors during test
 config :logger, level: :warn
 
+config :wallaby, driver: Wallaby.Experimental.Chrome
+
 # Configure your database
 config :wallaby_test, WallabyTest.Repo,
   adapter: Ecto.Adapters.Postgres,
